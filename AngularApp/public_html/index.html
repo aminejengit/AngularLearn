@@ -9,19 +9,20 @@ and open the template in the editor.
         <title>AngularApp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     </head>
     <body ng-app="myApp" ng-controller="myCtrl">
-        {{ firstName + " " + lastName}}
-        
+
 
         <div ng-repeat="worker in workers">
             <div ng-if="worker.nom != 'amine'" ng-mouseover="change(worker)" ng-mouseleave="reset()">
-                {{worker}}
+                <showworkers name="text to show"> </showworkers>
             </div>
-            
         </div>
+
+        {{lastName}}
         <script src="../app/app.js"></script>
         <script src="../app/services/DataService.js"></script>
+        <script src="../app/directives/ShowWorkers.js"></script>
     </body>
 </html>

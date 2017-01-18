@@ -10,3 +10,4 @@ app.controller("myCtrl", function ($scope, DataService) {
         $scope.workers = DataService.getWorkers();
     }
 });
+
