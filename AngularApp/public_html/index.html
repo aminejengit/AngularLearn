@@ -13,12 +13,7 @@ and open the template in the editor.
     </head>
     <body ng-app="myApp" ng-controller="myCtrl">
         {{ firstName + " " + lastName}}
-        <script>
-                    var app = angular.module("myApp", []);
-                    app.controller("myCtrl", function ($scope) {
-                        $scope.firstName = "Amine";
-                        $scope.lastName = "Jen";
-                    });
-        </script>
+
+        <script src="../app/app.js"></script>
     </body>
 </html>
